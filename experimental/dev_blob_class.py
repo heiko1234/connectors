@@ -140,20 +140,20 @@ for blob in ContainerClient.from_connection_string(connection_string, container_
 
 
 
-blobclient
+# blobclient
 
 subcontainer="coinbasedata"
 file="coinbase_data.parquet"
 
-blob_str = subcontainer + "/" + file
-blob_str
-bytes = blobclient.get_blob_client(blob=blob_str).download_blob().readall()
-any_file = io.BytesIO(bytes)
+# blob_str = subcontainer + "/" + file
+# blob_str
+# bytes = blobclient.get_blob_client(blob=blob_str).download_blob().readall()
+# any_file = io.BytesIO(bytes)
 
 
-df = pd.read_parquet(any_file, engine="pyarrow")
+# df = pd.read_parquet(any_file, engine="pyarrow")
 
-df
+# df
 
 
 
