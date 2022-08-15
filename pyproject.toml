@@ -20,7 +20,7 @@ numpy = "*"
 
 adlfs = "*"
 azure-kusto-data = "*"
-azure-storage-blob = "12.7.1"  # = 12.7.1
+azure-storage-blob = "12.7.1"  # = 12.7.1 # othrewise there is an connection error to Azurite
 
 python-dotenv = "^0.17.0"
 
