@@ -35,7 +35,7 @@ class BlobStorageConnector:
     
         try: 
             self.blobclient = self.get_client_by_string(container_name, local_run)
-            next(self.blobclient.list_blobs())
+            # next(self.blobclient.list_blobs())
         except (ServiceRequestError):
             pass
         except (ResourceNotFoundError, ValueError, ClientAuthenticationError, KeyError, AttributeError):
@@ -79,7 +79,7 @@ class BlobStorageConnector:
         output = []
         for blob in self.blobclient.list_blobs():
             if subcontainer in blob.name and files_with in blob.name:
-                output.append(blob.name.spli("/")[1])
+                output.append(blob.name.split("/")[1])
         return output
     
     def get_parquet(self, subcontainer, file) -> pd.DataFrame:

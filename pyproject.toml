@@ -4,8 +4,11 @@ version = "0.1.0"
 description = ""
 authors = ["Heiko Kulinna <Heikokulinna@gmx.de>"]
 
-# update lockfile
+
+# how to update lockfile: 
 # poetry update --lock -vvv
+# poetry install
+
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -17,7 +20,7 @@ numpy = "*"
 
 adlfs = "*"
 azure-kusto-data = "*"
-azure-storage-blob = "*"
+azure-storage-blob = "12.7.1"  # = 12.7.1
 
 python-dotenv = "^0.17.0"
 
