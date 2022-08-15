@@ -21,3 +21,10 @@ config=coinbase_datafetcher.get_yaml(subcontainer="configuration_data", file="jo
 config
 
 
+
+# coinbase_datafetcher.upload_data_to_blob(df, subcontainer, filename, filetype="parquet")
+
+
+# coinbase_datafetcher.get_excel(subcontainer, file)
+
+
