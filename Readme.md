@@ -67,9 +67,21 @@ This Repo contains of several major folders.
 |- kusto 
 |- mlflow
 |- experimental
+|- how_to_use
 
 
 ```
 
-The .yaml File in "config_for_azure_blobstorage" should be added the azurite container of this project.
+
+
+
+
+
+Literatur:
+- https://docs.microsoft.com/de-de/azure/data-explorer/
+
+
+
+
+
 
