@@ -27,7 +27,6 @@ class KustoConnector:
 
     def fetch_kusto_data(self, query):
         response = self.client.execute(database=self.sub_db, query=query)
-
         output = dataframe_from_result_table(response.primary_results[0])
 
         return output

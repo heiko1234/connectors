@@ -1,10 +1,11 @@
 
-# Dagster and MLFlow
+# Blobstorage & Kusto Connector
 
-This Repo is about to use MLFlow within a Dagster Pipeline
+This Repo is to have easy to use Connectors to Blobstorage and Kusto.
+
+There is a how_to_use folder in this repo that shows how to use the connectors.
 
 
-This Repo is based on Poetry and can be executed within an virtual environment.
 
 ## Install
 
@@ -79,7 +80,7 @@ This Repo contains of several major folders.
 
 Literatur:
 - https://docs.microsoft.com/de-de/azure/data-explorer/
-
+- https://github.com/Azure/azure-kusto-python/blob/master/azure-kusto-data/tests/sample.py
 
 
 
